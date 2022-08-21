@@ -1,8 +1,9 @@
 :root {
-  --branding-color: #f9f7fe;
+  --primary-color: #f9f7fe;
   --h-font-family: "Lemonada", cursive;
   --default-font-family: "Lemon", cursive;
   --btn-bg-color: #6c63ff;
+  --btn-color: #6c63ff;
 }
 h1,
 h2,
@@ -13,10 +14,12 @@ h6 {
   color: black;
   font-family: var(--h-font-family);
   font-weight: bold;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 12px;
+  line-height: 1.2;
 }
-h1 {
-  font-size: 80px;
+.hero h1 {
+  font-size: 74px;
 }
 .hero h2 {
   font-weight: normal;
@@ -28,14 +31,13 @@ p {
   font-weight: normal;
 }
 .hero {
-  background-color: var(--branding-color);
+  background-color: var(--primary-color);
   text-align: center;
   padding: 160px 20px;
   margin: 0;
 }
 .hero p {
   font-size: 36px;
-  font-weight: bold;
   margin: 0;
 }
 .btn-branding {
@@ -45,4 +47,41 @@ p {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+}
+.btn-branding-outline {
+  color: var(--btn-color);
+  border: 1px solid var(--btn-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+.description {
+  padding: 80px 60px;
+}
+.description h2 {
+  font-size: 32px;
+}
+.description p {
+  font-size: 16px;
+  line-height: 30px;
+}
+img {
+  padding: 40px;
+  background-color: var(--primary-color);
+}
+@media (max-width: 960px) {
+  .description {
+    text-align: center;
+    padding: 40px 30px;
+  }
+  .description p {
+    text-align: justify;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+  .btn-branding-outline {
+    width: 100%;
+  }
 }
