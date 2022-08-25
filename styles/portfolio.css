@@ -99,6 +99,86 @@ p {
   max-width: 80%;
   margin-left: 60px;
 }
+.page-content h1 {
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 80px;
+  margin: 80px 0px;
+}
+.page-content img {
+  width: 400px;
+  height: 400px;
+  object-fit: scale-down;
+}
+.carousel-item {
+  background-color: var(--primary-color);
+}
+.page-content h4 {
+  font-size: 18px;
+  text-align: center;
+}
+.page-content p {
+  font-size: 20px;
+}
+.page-content .contact {
+  font-size: 14px;
+  font-weight: normal;
+}
+header {
+  margin: 10px 0px;
+}
+ul {
+  list-style: none;
+}
+ul li a {
+  font-weight: normal;
+  text-decoration: none;
+  color: black;
+  transition: all 150ms ease-in-out;
+}
+ul li a :hover{
+  color: #6c63ff;
+}
+ul li a.active-link {
+  color: #6c63ff;
+}
+footer a.contact-email {
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+footer a:hover {
+  color: #6c63ff;
+}
+footer h4 {
+  font-size: 16px;
+  font-weight: normal;
+}
+footer .work-inquiry {
+  line-height: 2;
+  padding: 30px 30px;
+  background-color: var(--primary-color);
+  margin-top: 120px;
+}
+footer .icons a {
+  color: var(--btn-bg-color);
+  font-size: 20px;
+  background-color: var(--primary-color);
+  margin: 0 20px;
+  padding: 10px 18px;
+  border-radius: 50%;
+  transition: all 150ms ease-in-out;
+}
+footer .icons a:hover {
+  background-color: var(--btn-bg-color);
+  color: var(--primary-color);
+}
+footer p {
+  font-family: var(--h-font-family);
+  font-weight: normal;
+  font-size: 12px;
+}
 @media (max-width: 960px) {
   .description {
     text-align: center;
@@ -122,5 +202,16 @@ p {
     display: block;
     max-width: 100%;
     margin-top: 20px;
+  }
+  .page-content h1 {
+    font-size: 48px;
+    margin: 60px 0px;
+  }
+  .page-content {
+    margin: 120px 0px;
+    text-align: center;
+  }
+  footer a.contact-email {
+    font-size: 20px;
   }
 }
