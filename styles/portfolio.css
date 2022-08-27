@@ -214,4 +214,7 @@ footer p {
   footer a.contact-email {
     font-size: 20px;
   }
+  footer a.contact-email {
+    font-size: 14px;
+  }
 }
